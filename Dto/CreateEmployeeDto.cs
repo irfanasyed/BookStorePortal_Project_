@@ -5,11 +5,7 @@ namespace BookStorePortal_Project_.Dto
 {
     public class CreateEmployeeDto
     {
-        [Key]
-
-        [Required]
-        public int EmpId { get; set; }
-
+        
         [StringLength(50,ErrorMessage ="Fname cannot exceed 50 characters")]
         public string? Fname { get; set; }
 
@@ -29,8 +25,5 @@ namespace BookStorePortal_Project_.Dto
 
         public DateTime? HireDate { get; set; } = DateTime.Now;
 
-        public virtual Job? Job { get; set; }
-
-        public virtual Publisher? Pub { get; set; }
     }
 }
