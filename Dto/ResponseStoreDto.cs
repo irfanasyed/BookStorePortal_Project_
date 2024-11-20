@@ -8,6 +8,6 @@
         public string? City { get; set; }
         public string? State { get; set; }
         public string? Zip { get; set; }
-        public ICollection<SaleDto>? Sales { get; set; }
+        public ICollection<ResponseSaleDto>? Sales { get; set; }
     }
 }

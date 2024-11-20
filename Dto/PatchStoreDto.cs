@@ -16,7 +16,7 @@ namespace BookStorePortal_Project_.Dto
         [StringLength(50, ErrorMessage = "State can't exceed 50 characters.")]
         public string? State { get; set; }
         [Required]
-        [RegularExpression(@"^\d{5}(-\d{4})?$", ErrorMessage = "Invalid Zip code format. Please use either '12345' or '12345-6789'.")]
+        [RegularExpression(@"^\d{6}(-\d{4})?$", ErrorMessage = "Invalid Zip code format. Please use either '12345' or '12345-6789'.")]
         public string? Zip { get; set; }
     }
 }
